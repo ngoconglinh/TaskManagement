@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">#FF5722</item>
+        <item name="android:textColorHint">#80000000</item>
+    </style>
+
+    <style name="progressBarStyle" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/background_color</item>
+    </style>
+</resources>

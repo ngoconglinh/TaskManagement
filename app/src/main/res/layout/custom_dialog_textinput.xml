@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        tools:ignore="UseCompoundDrawables">
+        <TextView
+            android:includeFontPadding="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_dark_80"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_weight="1"
+            android:text="Add Participants"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:id="@+id/btn_custom_dialog_close"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background_color"
+            android:background="@drawable/baseline_close_24"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="0dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/btn_custom_dialog_text_input"
+            android:includeFontPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="@string/enter_participants"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:imeOptions="actionNone"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/text_color_dark_80"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_gravity="right"
+        android:id="@+id/btn_custom_dialog_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create"
+        android:paddingHorizontal="40dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/poppins_medium"
+        android:background="@drawable/card_3"
+        android:backgroundTint="@color/background_color"
+        android:textAllCaps="false"
+        tools:ignore="RtlHardcoded,TouchTargetSizeCheck,VisualLintButtonSize" />
+
+</LinearLayout>

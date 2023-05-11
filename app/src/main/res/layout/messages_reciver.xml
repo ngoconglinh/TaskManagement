@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="12dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="RtlSymmetry">
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text_view_timeline_messenges"
+        android:layout_gravity="center"
+        android:includeFontPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_dark_80"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Time Line"
+        tools:ignore="HardcodedText,VisualLintLongText" />
+    <LinearLayout
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="15dp"
+        android:layout_gravity="left"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/border_chat_reciver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+        <TextView
+            android:id="@+id/text_view_text_messenges"
+            android:includeFontPadding="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_dark"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Hi?"
+            tools:ignore="HardcodedText,VisualLintLongText" />
+        <ImageView
+            android:id="@+id/imageView_messages_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:maxHeight="300dp"
+            android:maxWidth="150dp"
+            android:visibility="gone"
+            android:src="@drawable/user1"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+</LinearLayout>

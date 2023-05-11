@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:layout_height="80dp"
+    android:layout_weight="1"
+    app:cardCornerRadius="40dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="20dp"
+    app:cardBackgroundColor="@null"
+    android:outlineSpotShadowColor="@null"
+    app:cardElevation="0dp"
+    tools:targetApi="p"
+    android:id="@+id/card"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="6dp"
+            android:clickable="true"
+            android:id="@+id/layout"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_day_num_2"
+                android:includeFontPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="16"
+                android:textColor="@color/text_color_dark_50"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+            <TextView
+                android:id="@+id/tv_date_num_2"
+                android:includeFontPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Mon"
+                android:textColor="@color/text_color_dark_50"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText,SmallSp,TextContrastCheck" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dot"
+                android:visibility="invisible"
+                android:layout_marginTop="5dp"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                app:cardCornerRadius="6dp"
+                app:cardBackgroundColor="@color/background_color"/>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

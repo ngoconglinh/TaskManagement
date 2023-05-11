@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="7"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/mon"
+        android:textColor="@color/text_color_dark_50"
+        android:textSize="10sp"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/tue"
+        android:textColor="@color/text_color_dark_50"
+        android:textSize="10sp"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/wed"
+        android:textColor="@color/text_color_dark_50"
+        android:textSize="10sp"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/thu"
+        android:textColor="@color/text_color_dark_50"
+        android:textSize="10sp"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/fri"
+        android:textColor="@color/text_color_dark_50"
+        android:textSize="10sp"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/sat"
+        android:textColor="@color/text_color_dark_50"
+        android:textSize="10sp"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/sun"
+        android:textColor="@color/text_color_dark_50"
+        android:textSize="10sp"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="75dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="5dp"
+    android:id="@+id/task_item_collapse_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pending_icon"
+            android:layout_margin="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/pending_icon"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_task_item_collapse_title"
+                android:includeFontPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark_70"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/mobile_application_design"/>
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/rounded_corners_progress_bar"
+                android:layout_width="match_parent"
+                android:progress="40"
+                android:layout_marginTop="10dp"
+                android:layout_height="5dp" />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+            <include
+                android:id="@+id/avatar_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                layout="@layout/avatar_layout" />
+            <include
+                android:id="@+id/avatar_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                layout="@layout/avatar_layout" />
+            <include
+                android:id="@+id/avatar_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/avatar_layout" />
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/btn_task_item_collapse_menu"
+            android:layout_marginEnd="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more"
+            android:contentDescription="@string/todo"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
